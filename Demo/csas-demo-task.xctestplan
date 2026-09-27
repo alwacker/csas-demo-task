@@ -1,0 +1,76 @@
+{
+  "configurations" : [
+    {
+      "id" : "ABE6E5F0-BC1E-453C-9C93-5729B08A79E9",
+      "name" : "Configuration 1",
+      "options" : {}
+    }
+  ],
+  "defaultOptions" : {},
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:App",
+        "identifier" : "AppTests",
+        "name" : "AppTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Library",
+        "identifier" : "PipelineTests",
+        "name" : "PipelineTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Library",
+        "identifier" : "DIContainerTests",
+        "name" : "DIContainerTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Features",
+        "identifier" : "AccountTests",
+        "name" : "AccountTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Library",
+        "identifier" : "ModelsTests",
+        "name" : "ModelsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Shared",
+        "identifier" : "SharedExtensionsTests",
+        "name" : "SharedExtensionsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Library",
+        "identifier" : "NetworkingTests",
+        "name" : "NetworkingTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Library",
+        "identifier" : "ServiceTests",
+        "name" : "ServiceTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Library",
+        "identifier" : "LocalizationTests",
+        "name" : "LocalizationTests"
+      }
+    }
+  ],
+  "version" : 1
+}

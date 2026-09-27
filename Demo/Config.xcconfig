@@ -1,0 +1,6 @@
+// API settings for the app target, exposed to the code through Info.plist.
+// Committed on purpose: it is a sandbox key for public data (see README).
+// No quotes: xcconfig keeps them as part of the value.
+// "//" starts a comment here, hence "https:/$()/" in the URL.
+API_KEY = 52da7020-feaa-4fbc-9006-56642664ced0
+BASE_URL = https:/$()/webapi.developers.erstegroup.com/api/csas/public/sandbox/v3
