@@ -12,10 +12,6 @@
 
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* csas-demo-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "csas-demo-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D48B80BA3062CD25002B38CB /* App */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = App; sourceTree = "<group>"; };
-		D48B80BB3062CD25002B38CB /* Features */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Features; sourceTree = "<group>"; };
-		D48B80BC3062CD25002B38CB /* Library */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Library; sourceTree = "<group>"; };
-		D48B80BD3062CD25002B38CB /* Shared */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Shared; sourceTree = "<group>"; };
 		D48B81B03063200000000001 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +35,14 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		D4B4376630698F5F00446C7C /* Packages */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFolders = (
+				Library,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				D48B81B03063200000000001 /* README.md */,
-				D48B80BA3062CD25002B38CB /* App */,
-				D48B80BB3062CD25002B38CB /* Features */,
-				D48B80BC3062CD25002B38CB /* Library */,
-				D48B80BD3062CD25002B38CB /* Shared */,
+				D4B4376630698F5F00446C7C /* Packages */,
 				D48B80AE3062CCF8002B38CB /* Demo */,
 				000000000000000000000020 /* Products */,
 			);
