@@ -74,7 +74,7 @@ The sandbox base URL is used because the key is not authorised for the productio
 
 ## Architecture
 
-Clean Architecture in four local Swift packages plus a thin app target. Dependencies point one way only:
+Clean Architecture in four local Swift packages (in `Packages/`) plus a thin app target (`Demo/`). Dependencies point one way only:
 
 ```
 Demo (app target)
@@ -108,7 +108,7 @@ Naming follows one rule: a protocol carries the intended name (`AccountListRepos
 ### Library
 
 ```
-Library/Sources/
+Packages/Library/Sources/
 ├── Models/
 │   ├── ModelsContainer.swift               # Factory for amount conversion
 │   ├── Amount/
@@ -156,7 +156,7 @@ Library/Sources/
 ### Shared
 
 ```
-Shared/Sources/
+Packages/Shared/Sources/
 ├── SharedExtensions/
 │   ├── FormatterContainer.swift            # Factory for all formatters
 │   └── Formatting/
@@ -201,7 +201,7 @@ Shared/Sources/
 ### Features
 
 ```
-Features/Sources/Account/
+Packages/Features/Sources/Account/
 ├── AccountContainer.swift                  # Module container; receives the Library/Shared containers
 ├── Navigation/AccountCoordinator.swift     # Root flow; implements AccountListRouter
 ├── AccountList/
@@ -241,7 +241,7 @@ Features/Sources/Account/
 ### App and Demo
 
 ```
-App/Sources/App/
+Packages/App/Sources/App/
 ├── AppContainer.swift        # Singletons: Networking, Models, AppError, Formatter, Service, Account containers
 ├── AppCoordinator.swift      # Creates the navigation controller, starts the Account flow
 └── SceneDelegate.swift
@@ -336,7 +336,7 @@ Ownership points down; the only reference back is `ViewModel → Router`, and it
 
 ## Localization
 
-All strings live in one catalog, `Library/Sources/Localization/Resources/Localizable.xcstrings`, with English and Czech. Code never uses string literals for UI text. It reads typed keys:
+All strings live in one catalog, `Packages/Library/Sources/Localization/Resources/Localizable.xcstrings`, with English and Czech. Code never uses string literals for UI text. It reads typed keys:
 
 ```swift
 Localization.AccountList.title                        // "Accounts" / "Účty"
@@ -379,7 +379,7 @@ xcodebuild test \
   -destination 'platform=iOS Simulator,name=iPhone 17'
 ```
 
-To run one package in isolation, open its `Package.swift` in Xcode and press ⌘U.
+To run one package in isolation, open its `Packages/<Name>/Package.swift` in Xcode and press ⌘U.
 
 | Package | Test target | Covers |
 |---------|-------------|--------|
@@ -393,7 +393,7 @@ To run one package in isolation, open its `Package.swift` in Xcode and press ⌘
 | `Features` | `AccountTests` | Decoding real API payloads (dates, `Decimal` precision, optional fields, the transaction variants); all converters; repositories through `APIProviderFake`; use cases (including the repeated-page stop); content converters (status, month grouping across pages, row titles); view models (load, error, retry, paging, debounced search, routing); the coordinator |
 | `App` | `AppTests` | Module containers are app-wide singletons |
 
-Test doubles live in `Features/Tests/AccountTests/Helpers`:
+Test doubles live in `Packages/Features/Tests/AccountTests/Helpers`:
 
 | Double | Kind | Purpose |
 |--------|------|---------|

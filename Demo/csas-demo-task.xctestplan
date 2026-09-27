@@ -10,63 +10,63 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:App",
+        "containerPath" : "container:Packages/App",
         "identifier" : "AppTests",
         "name" : "AppTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Library",
+        "containerPath" : "container:Packages/Library",
         "identifier" : "PipelineTests",
         "name" : "PipelineTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Library",
+        "containerPath" : "container:Packages/Library",
         "identifier" : "DIContainerTests",
         "name" : "DIContainerTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Features",
+        "containerPath" : "container:Packages/Features",
         "identifier" : "AccountTests",
         "name" : "AccountTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Library",
+        "containerPath" : "container:Packages/Library",
         "identifier" : "ModelsTests",
         "name" : "ModelsTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Shared",
+        "containerPath" : "container:Packages/Shared",
         "identifier" : "SharedExtensionsTests",
         "name" : "SharedExtensionsTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Library",
+        "containerPath" : "container:Packages/Library",
         "identifier" : "NetworkingTests",
         "name" : "NetworkingTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Library",
+        "containerPath" : "container:Packages/Library",
         "identifier" : "ServiceTests",
         "name" : "ServiceTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:Library",
+        "containerPath" : "container:Packages/Library",
         "identifier" : "LocalizationTests",
         "name" : "LocalizationTests"
       }

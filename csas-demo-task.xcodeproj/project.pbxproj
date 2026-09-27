@@ -395,19 +395,19 @@
 /* Begin XCLocalSwiftPackageReference section */
 		D48B816530630B60002B38CB /* XCLocalSwiftPackageReference "Shared" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Shared;
+			relativePath = Packages/Shared;
 		};
 		D48B816C30630B68002B38CB /* XCLocalSwiftPackageReference "Library" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Library;
+			relativePath = Packages/Library;
 		};
 		D48B817330630B71002B38CB /* XCLocalSwiftPackageReference "Features" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = Features;
+			relativePath = Packages/Features;
 		};
 		D48B817630630B78002B38CB /* XCLocalSwiftPackageReference "App" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = App;
+			relativePath = Packages/App;
 		};
 /* End XCLocalSwiftPackageReference section */
 
